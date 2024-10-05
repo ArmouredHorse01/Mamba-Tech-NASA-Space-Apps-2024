@@ -1,0 +1,237 @@
+/* Reset CSS */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Body and general styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Navigation bar styles */
+nav {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Align items at the ends */
+    align-items: center; /* Center items vertically */
+}
+
+nav h1 {
+    margin-left: 20px; /* Add some margin to the left */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Use flexbox to align items horizontally */
+}
+
+nav ul li {
+    margin-left: 20px; /* Add space between links */
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Hero section styles */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-section video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+}
+
+.hero-section h1 {
+    position: relative;
+    color: white;
+    z-index: 2;
+    font-size: 3em;
+    text-align: center;
+    text-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.hero-section p {
+    position: relative;
+    color: white;
+    z-index: 2;
+    font-size: 1.5em;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Upload section styles */
+.upload-section {
+    padding: 50px 20px;
+    text-align: center;
+    background: rgba(240, 240, 240, 0.9);
+}
+
+.upload-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.upload-section input[type="file"] {
+    margin: 20px 0;
+}
+
+.upload-section button {
+    padding: 10px 20px;
+    font-size: 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.upload-section button:hover {
+    background-color: #0056b3;
+}
+
+#uploadStatus {
+    margin-top: 20px;
+    font-size: 1.2em;
+    color: green;
+}
+
+/* Research section styles */
+.research-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.8);
+}
+
+.research-section .glowing-text {
+    color: #00bfff;
+    text-shadow: 0 0 5px #00bfff, 0 0 10px #00bfff, 0 0 15px #00bfff;
+    font-size: 2.5em;
+}
+
+.research-section p {
+    margin-top: 20px;
+    line-height: 1.6;
+    font-size: 1.2em;
+}
+
+/* Team section styles */
+.team-section {
+    padding: 100px 20px;
+    text-align: center;
+    background: rgba(240, 240, 240, 0.9);
+}
+
+.team-section h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+.team-section p {
+    font-size: 1.2em;
+}
+
+/* Footer styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    nav ul li {
+        display: block; /* Stack navigation items vertically */
+        margin: 10px 0; /* Add some margin between items */
+    }
+
+    .hero-section h1 {
+        font-size: 2.5em; /* Smaller font for mobile */
+    }
+
+    .hero-section p {
+        font-size: 1.2em; /* Smaller subtitle */
+    }
+
+    .research-section .glowing-text {
+        font-size: 2em; /* Adjust glowing text size */
+    }
+
+    .team-section h2 {
+        font-size: 2em; /* Adjust team title size */
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section h1 {
+        font-size: 2em; /* Further reduce for smaller screens */
+    }
+
+    .hero-section p {
+        font-size: 1em; /* Further reduce for smaller screens */
+    }
+
+    .research-section .glowing-text {
+        font-size: 1.5em; /* Further adjust glowing text size */
+    }
+
+    .team-section h2 {
+        font-size: 1.5em; /* Further adjust team title size */
+    }
+}
+
+/* Additional Styles */
+.container {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1200px;
+}
+
+h1, h2 {
+    margin: 20px 0;
+}
+
+p {
+    margin: 15px 0;
+}
+
+/* Glowing Effect */
+.glow {
+    text-shadow: 0 0 5px rgba(255, 255, 255, 0.8), 0 0 10px rgba(255, 255, 255, 0.6), 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.link:hover {
+    text-decoration: underline;
+}
